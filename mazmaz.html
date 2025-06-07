@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>چیپس مزمز نمکی  </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Vazir', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* هدر */
+        header {
+            background-color: #d32f2f;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            display: inline-block;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: inline-block;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        /* بخش هیرو */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, #d32f2f, #ffeb3b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .hero-content button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #fff;
+            color: #d32f2f;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hero-content button:hover {
+            background-color: #fbc02d;
+            color: #fff;
+        }
+
+        /* بخش ویژگی‌ها */
+        .features {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .features h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #d32f2f;
+        }
+
+        .feature-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .feature-item {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #d32f2f;
+        }
+
+        .feature-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* فوتر */
+        footer {
+            background-color: #d32f2f;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* ریسپانسیو */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            .hero-content p {
+                font-size: 18px;
+            }
+
+            .feature-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- هدر -->
+    <header>
+        <div class="logo">مزمز</div>
+        <nav>
+            <ul>
+                <li><a href="#features">ویژگی‌ها</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- بخش هیرو -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>چیپس مزمز نمکی</h1>
+            <p>یه طعم ترد و دوست‌داشتنی که نمی‌تونی ازش بگذری</p>
+            <button onclick="alert('به زودی در فروشگاه‌ها')">خرید کنید</button>
+        </div>
+    </section>
+
+    <!-- بخش ویژگی‌ها -->
+    <section class="features" id="features">
+        <h2>چرا چیپس مزمز نمکی رو انتخاب کنی؟</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <img src="https://i.ibb.co/NR64KFC/photo-2025-06-06-23-10-54.jpg" alt="چیپس مزمز نمکی">
+                <h3>چیپس نمکی دوست‌داشتنی</h3>
+                <p>یه بسته پر از طعم و تازگی، آماده برای لذت بردن</p>
+            </div>
+            <div class="feature-item">
+                <h3>طعم بی‌نظیر نمکی</h3>
+                <p>ترکیب دقیق نمک دریا و سیب‌زمینی تازه، طعمی که عاشقش می‌شی</p>
+            </div>
+            <div class="feature-item">
+                <h3>کیفیت تضمین شده</h3>
+                <p>با بهترین مواد اولیه و بدون هیچ افزودنی مضر.</p>
+            </div>
+            <div class="feature-item">
+                <h3>تردی بی‌مثال</h3>
+                <p>هر چیپس یه لحظه ترد و خوشمزه‌ست که دلت رو می‌بره</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer>
+        <p>مزمز - طعم خوش لحظه‌ها</p>
+    </footer>
+
+    <script>
+        // اسکریپت ساده برای اسکرول نرم
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
